@@ -192,7 +192,7 @@
 			<organization>University Health Network</organization>
 		</developer>
 		<developer>
-			<id></id>
+			<id/>
 			<name>Lisa Wong</name>
 			<organization>University Health Network</organization>
 		</developer>
@@ -1058,7 +1058,7 @@
 		<maven_checkstyle_version>3.4.0</maven_checkstyle_version>
 
 		<!-- Jacoco -->
-		<argLine></argLine>
+		<argLine/>
 	</properties>
 
 	<dependencyManagement>
@@ -1373,7 +1373,7 @@
 			<dependency>
 				<groupId>jakarta.servlet</groupId>
 				<artifactId>jakarta.servlet-api</artifactId>
-				<version>6.0.0</version>
+				<version>6.1.0</version>
 			</dependency>
 			<dependency>
 				<groupId>jakarta.transaction</groupId>
@@ -2618,7 +2618,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<ignore/>
 									</action>
 								</pluginExecution>
 								<pluginExecution>
@@ -2637,7 +2637,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<ignore/>
 									</action>
 								</pluginExecution>
 							</pluginExecutions>
@@ -2874,7 +2874,7 @@
 								</replace>
 								<echo>Adding Syntax Highlighter</echo>
 								<replace dir="target/site" summary="true">
-									<include name="*.html"></include>
+									<include name="*.html"/>
 									<replacetoken><![CDATA[</body>]]></replacetoken>
 									<replacevalue><![CDATA[
 <script type="text/javascript">
@@ -2916,7 +2916,7 @@
 							<target>
 								<echo>Adding Google analytics in target/site for &lt;body&gt;</echo>
 								<replace dir="target/site" summary="true">
-									<include name="**/*.html"></include>
+									<include name="**/*.html"/>
 									<!--suppress UnresolvedMavenProperty -->
 									<replacefilter token="#build#" value="${label}"/>
 									<replacefilter token="#version#" value="${project.version}"/>
@@ -2939,7 +2939,7 @@
 								</replace>
 								<echo>Adding Google analytics in target/site for &lt;BODY&gt;</echo>
 								<replace dir="target/site" summary="true">
-									<include name="**/*.html"></include>
+									<include name="**/*.html"/>
 									<replacetoken><![CDATA[</BODY>]]></replacetoken>
 									<replacevalue><![CDATA[
 <script>
