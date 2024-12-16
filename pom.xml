@@ -192,7 +192,7 @@
 			<organization>University Health Network</organization>
 		</developer>
 		<developer>
-			<id></id>
+			<id/>
 			<name>Lisa Wong</name>
 			<organization>University Health Network</organization>
 		</developer>
@@ -1042,7 +1042,7 @@
 		<ebay_cors_filter_version>1.0.1</ebay_cors_filter_version>
 		<elastic_apm_version>1.44.0</elastic_apm_version>
 		<elasticsearch_version>8.14.3</elasticsearch_version>
-		<ucum_version>1.0.8</ucum_version>
+		<ucum_version>1.0.9</ucum_version>
 
 		<!-- Clinical Reasoning & CQL Support -->
 		<clinical-reasoning.version>3.8.0</clinical-reasoning.version>
@@ -1058,7 +1058,7 @@
 		<maven_checkstyle_version>3.4.0</maven_checkstyle_version>
 
 		<!-- Jacoco -->
-		<argLine></argLine>
+		<argLine/>
 	</properties>
 
 	<dependencyManagement>
@@ -2618,7 +2618,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<ignore/>
 									</action>
 								</pluginExecution>
 								<pluginExecution>
@@ -2637,7 +2637,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<ignore/>
 									</action>
 								</pluginExecution>
 							</pluginExecutions>
@@ -2874,7 +2874,7 @@
 								</replace>
 								<echo>Adding Syntax Highlighter</echo>
 								<replace dir="target/site" summary="true">
-									<include name="*.html"></include>
+									<include name="*.html"/>
 									<replacetoken><![CDATA[</body>]]></replacetoken>
 									<replacevalue><![CDATA[
 <script type="text/javascript">
@@ -2916,7 +2916,7 @@
 							<target>
 								<echo>Adding Google analytics in target/site for &lt;body&gt;</echo>
 								<replace dir="target/site" summary="true">
-									<include name="**/*.html"></include>
+									<include name="**/*.html"/>
 									<!--suppress UnresolvedMavenProperty -->
 									<replacefilter token="#build#" value="${label}"/>
 									<replacefilter token="#version#" value="${project.version}"/>
@@ -2939,7 +2939,7 @@
 								</replace>
 								<echo>Adding Google analytics in target/site for &lt;BODY&gt;</echo>
 								<replace dir="target/site" summary="true">
-									<include name="**/*.html"></include>
+									<include name="**/*.html"/>
 									<replacetoken><![CDATA[</BODY>]]></replacetoken>
 									<replacevalue><![CDATA[
 <script>
