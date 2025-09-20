@@ -192,7 +192,7 @@
 			<organization>University Health Network</organization>
 		</developer>
 		<developer>
-			<id></id>
+			<id/>
 			<name>Lisa Wong</name>
 			<organization>University Health Network</organization>
 		</developer>
@@ -1031,7 +1031,7 @@
 		<spring_version>6.1.8</spring_version>
 		<spring_data_bom_version>2023.1.6</spring_data_bom_version>
 		<spring_batch_version>4.3.10</spring_batch_version>
-		<spring_boot_version>3.2.6</spring_boot_version>
+		<spring_boot_version>3.4.10</spring_boot_version>
 		<spring_retry_version>2.0.6</spring_retry_version>
 		<json_path_version>2.9.0</json_path_version>
 		<stax2_api_version>3.1.4</stax2_api_version>
@@ -1058,7 +1058,7 @@
 		<maven_checkstyle_version>3.4.0</maven_checkstyle_version>
 
 		<!-- Jacoco -->
-		<argLine></argLine>
+		<argLine/>
 	</properties>
 
 	<dependencyManagement>
@@ -2618,7 +2618,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<ignore/>
 									</action>
 								</pluginExecution>
 								<pluginExecution>
@@ -2637,7 +2637,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<ignore/>
 									</action>
 								</pluginExecution>
 							</pluginExecutions>
@@ -2874,7 +2874,7 @@
 								</replace>
 								<echo>Adding Syntax Highlighter</echo>
 								<replace dir="target/site" summary="true">
-									<include name="*.html"></include>
+									<include name="*.html"/>
 									<replacetoken><![CDATA[</body>]]></replacetoken>
 									<replacevalue><![CDATA[
 <script type="text/javascript">
@@ -2916,7 +2916,7 @@
 							<target>
 								<echo>Adding Google analytics in target/site for &lt;body&gt;</echo>
 								<replace dir="target/site" summary="true">
-									<include name="**/*.html"></include>
+									<include name="**/*.html"/>
 									<!--suppress UnresolvedMavenProperty -->
 									<replacefilter token="#build#" value="${label}"/>
 									<replacefilter token="#version#" value="${project.version}"/>
@@ -2939,7 +2939,7 @@
 								</replace>
 								<echo>Adding Google analytics in target/site for &lt;BODY&gt;</echo>
 								<replace dir="target/site" summary="true">
-									<include name="**/*.html"></include>
+									<include name="**/*.html"/>
 									<replacetoken><![CDATA[</BODY>]]></replacetoken>
 									<replacevalue><![CDATA[
 <script>
